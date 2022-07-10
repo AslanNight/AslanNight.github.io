@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Aslan</title>
+  <title>守夜人小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="如何搭建个人博客（基于GitHub + Hexo) 第一阶段： 1.1 Node.js的安装与配置 点击此处通过官网下载相应版本，无特殊情况默认安装（next就完事）。 win + R 输入 cmd 打开命令提示符， 依次输入 node -v 和 npm -v，若返回版本号，即表示安装成功。 添加国内镜像源： 此时，我们需要配置阿里的镜像进行加速 在命令提示符输入 npm config set r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Aslan">
+<meta property="og:title" content="守夜人小屋">
 <meta property="og:url" content="http://example.com/2022/07/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E4%BA%8EGitHub%20+%20Hexo)/index.html">
-<meta property="og:site_name" content="Aslan">
+<meta property="og:site_name" content="守夜人小屋">
 <meta property="og:description" content="如何搭建个人博客（基于GitHub + Hexo) 第一阶段： 1.1 Node.js的安装与配置 点击此处通过官网下载相应版本，无特殊情况默认安装（next就完事）。 win + R 输入 cmd 打开命令提示符， 依次输入 node -v 和 npm -v，若返回版本号，即表示安装成功。 添加国内镜像源： 此时，我们需要配置阿里的镜像进行加速 在命令提示符输入 npm config set r">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-07-10T07:48:05.715Z">
-<meta property="article:modified_time" content="2022-07-10T07:48:05.880Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2022-07-10T08:19:46.315Z">
+<meta property="article:author" content="Aslan Su">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="Aslan" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="守夜人小屋" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -46,8 +46,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Aslan</a>
+        <a href="/" id="logo">守夜人小屋</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">阿斯兰的神秘研究室</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -118,7 +122,7 @@
 <p>hexo s (hexo server) 监视文件变动并自动更新，除修改站点配置文件外，无需重启服务器，刷新网页即可生效。</p>
 <p>hexo g (hexo generate) 生成静态网页（执行后会在站点根目录下生成public文件夹, hexo会将”&#x2F;blog&#x2F;source&#x2F;“ 下面的.md后缀的文件编译为.html后缀的文件,存放在”&#x2F;blog&#x2F;public&#x2F; “ 路径下）</p>
 <p>hexo d (hexo deploy) 将本地数据部署到远端服务器</p>
-<p>hexo clean 清除缓存，网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹</p>
+<p>hexo cl (hexo clean) 清除缓存，网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹</p>
 <blockquote>
 <p>附注，<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo 说明文档</a></p>
 </blockquote>
@@ -143,7 +147,7 @@
 <p>点击头像，点击 Settings 点击 SSH and GPG keys 新建SSH，建议名字同邮箱</p>
 <p>然后将剪贴板上的密钥粘贴进去</p>
 <p>本地连接GitHub</p>
-<p>右键单击， Git Bash Here 输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p>右键单击， Git Bash Here 输入 ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a></p>
 <p>使用任意编辑器（可用记事本）打开根目录下的 _config.yml</p>
 <p>对最后一段的配置进行修改</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;project&gt;</span><br><span class="line">  # example, https://github.com/hexojs/hexojs.github.io</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
@@ -155,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E4%BA%8EGitHub%20+%20Hexo)/" data-id="cl5f1gdta0002b8tzch3ke0ya" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%9F%BA%E4%BA%8EGitHub%20+%20Hexo)/" data-id="cl5f1p7qz0001bwtz3cvjbrw2" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -230,7 +234,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2022 John Doe<br>
+      &copy; 2022 Aslan Su<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
